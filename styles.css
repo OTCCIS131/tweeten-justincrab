@@ -4,16 +4,22 @@ body {
 
 
 /* Custom Classes */
+#navyNav{
+  margin: 0 10% 0 10%;
+}
+#bodyBox{
+  margin: 0 20% 0 20%;
+}
 .leftbar{
   float:left;
-  margin-left:10%;
+  /* margin-left:10%; */
   clear:right;
 }
 .middle{
   /*margin-left:45%; /*worksfor now, might need to use grid system*/
   float:left;
   clear:right;
-  margin-left:15%;
+   margin-left:8%; 
 }
 .midpic{
   max-width:70px;
@@ -25,9 +31,9 @@ body {
 }
 .rightbar{
   float:right;
-
   max-width:20%;
 }
+
 /* Bootstrap Overrides */
 .media-object{
     border-radius: 50%;

@@ -20,17 +20,17 @@
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top" id="navParent">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
+        <div class="navbar-header" id="navyNav">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Const Corp.</a>
+          <a class="navbar-brand" href="http://www.usconstructioncorp.com/">Const Corp.</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -57,25 +57,25 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-    <div class="container-fluid">
-      <div class="leftbar">
+    <div class="container-fluid" id="bodyBox">
+      <div class="leftbar" id="leftbar">
         <div class="portrait">
           <div class="circle-avatar" style="background-image:url(https://scontent-dft4-2.xx.fbcdn.net/v/t1.0-9/20954056_10210124213524215_1140768672271576427_n.jpg?oh=a5983516bb21b30f729160fc841a2552&oe=5A58C2C2)" alt="my morning face"></div>
         </div><!-- /.portrait -->
         <h2>Justin Crabtree</h2>
         <div class="caption"><h3><small>@scenicbrain</small></h3></div>
-        <div class="linkbox">
+        <div class="linkbox" id="linkbox">
           <p><span class="glyphicon glyphicon-home"></span>&emsp;Hell, Onearth</p>
           <span class="glyphicon glyphicon-link"></span>&emsp;<a href="https://www.facebook.com/justincrab">Digital Dissociation</a>
           <p><span class="glyphicon glyphicon-calendar"></span>&emsp;Joined November 2012</p>
           <p><span class="glyphicon glyphicon-picture"></span>&emsp;665 Photos and Videos</p>
         </div><!-- /.linkbox -->
       </div><!-- /.leftbar -->
-      <div class="middle">
-        <ul class="list-group">
+      <div class="middle" id="middle">
+        <ul class="list-group" id="composeNewTweet">
           <li class="list-group-item"><div class="well well-sm" style="text-align:center;"><b>Compose new Tweet</b></div></li>
           <li class="list-group-item"><textarea class="form-control" rows="5" id="comment"></textarea></li>
-          <li class="list-group-item">
+          <li class="list-group-item" id="tweetBottom">
             <div class="marginxtra">
                 <span class="label label-info">
                   <span class="glyphicon glyphicon-picture"></span>
@@ -92,11 +92,11 @@
               </div><!-- /.btn-group -->
           </li>
         </ul>
-        <ul class="list-group">
-          <li class="list-group-item">
+        <ul class="list-group" id="middleLower">
+          <li class="list-group-item" id="tweetStats">
               <p>Tweets &middot; Tweets & Replies &middot; Media</p>
           </li>
-          <li class="list-group-item">
+          <li class="list-group-item" id="tweet">
             <div class="midpic">
               <div class="circle-avatar" style="background-image:url(https://scontent-dft4-2.xx.fbcdn.net/v/t1.0-9/20954056_10210124213524215_1140768672271576427_n.jpg?oh=a5983516bb21b30f729160fc841a2552&oe=5A58C2C2)" alt="my morning face"></div>
             </div><!-- /.midpic -->
@@ -113,14 +113,14 @@
           </li>
         </ul>
       </div><!-- /.middle -->
-      <div class="rightbar">
-        <ul class="list-group">
+      <div class="rightbar" id="rightbar">
+        <ul class="list-group" id="rightUpper">
           <li class="list-group-item"><div class="well well-sm" style="text-align:center;"><b>Your Tweet Activity</b></div></li>
           <li class="list-group-item"><p>You've never tweeted. What a loser.</p></li>
         </ul>
-        <ul class="list-group">
+        <ul class="list-group" id="rightLower">
           <li class="list-group-item"><div class="well well-sm" style="text-align:center;"><b>Who To Follow</b></div></li>
-          <li class="list-group-item">
+          <li class="list-group-item" id="whoToFollow">
             <div class="media">
               <div class="media-left">
                   <img class="media-object" src="https://media1.giphy.com/media/26ufee8JeHwnshFiE/giphy.gif" alt="a monster" style="max-width:75px;">
