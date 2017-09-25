@@ -1,0 +1,160 @@
+<!--  Site:       Tweeten
+      Developer:  Justin Crabtree
+      Date:       9.25.17
+      Purpose:    Use bootstrap to make a twitter page  -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FauxTwitt</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Const Corp.</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Home <span class="sr-only">(current)</span></a></li>
+            <li class="active"><a href="#"><span class="glyphicon glyphicon-bell"></span> Notifications <span class="sr-only">(current)</span></a></li>
+            <li class="active"><a href="#"><span class="glyphicon glyphicon-envelope"></span> Messages <span class="sr-only">(current)</span></a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right" style="margin-right:50px;">
+            <form class="navbar-form navbar-left">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+            </form>
+            <li>
+              <img class="media-object" src="https://scontent-dft4-2.xx.fbcdn.net/v/t1.0-9/20954056_10210124213524215_1140768672271576427_n.jpg?oh=a5983516bb21b30f729160fc841a2552&oe=5A58C2C2" alt="faaaace" style="max-width:35px;margin-top:8px;">
+            </li>
+            <li>
+              <button type="button" class="btn btn-primary" style="margin-top:8px;">Tweet</button>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container-fluid">
+      <div class="leftbar">
+        <div class="portrait">
+          <div class="circle-avatar" style="background-image:url(https://scontent-dft4-2.xx.fbcdn.net/v/t1.0-9/20954056_10210124213524215_1140768672271576427_n.jpg?oh=a5983516bb21b30f729160fc841a2552&oe=5A58C2C2)" alt="my morning face"></div>
+        </div><!-- /.portrait -->
+        <h2>Justin Crabtree</h2>
+        <div class="caption"><h3><small>@scenicbrain</small></h3></div>
+        <div class="linkbox">
+          <p><span class="glyphicon glyphicon-home"></span>&emsp;Hell, Onearth</p>
+          <span class="glyphicon glyphicon-link"></span>&emsp;<a href="https://www.facebook.com/justincrab">Digital Dissociation</a>
+          <p><span class="glyphicon glyphicon-calendar"></span>&emsp;Joined November 2012</p>
+          <p><span class="glyphicon glyphicon-picture"></span>&emsp;665 Photos and Videos</p>
+        </div><!-- /.linkbox -->
+      </div><!-- /.leftbar -->
+      <div class="middle">
+        <ul class="list-group">
+          <li class="list-group-item"><div class="well well-sm" style="text-align:center;"><b>Compose new Tweet</b></div></li>
+          <li class="list-group-item"><textarea class="form-control" rows="5" id="comment"></textarea></li>
+          <li class="list-group-item">
+            <div class="marginxtra">
+                <span class="label label-info">
+                  <span class="glyphicon glyphicon-picture"></span>
+                </span>
+                <span class="label label-info">
+                  <span class="glyphicon glyphicon-pushpin"></span>
+                </span>
+              </div><!-- /.marginxtra -->
+              <div class="btn-group btn-group-lg" role="group" aria-label="..." style="float:right;margin-top:-10px;">
+                <p style="float:left;margin-right:10px;margin-top:-5px;">140</p>
+                <span class="label label-primary">
+                  <span class>Tweet</span>
+                </span>
+              </div><!-- /.btn-group -->
+          </li>
+        </ul>
+        <ul class="list-group">
+          <li class="list-group-item">
+              <p>Tweets &middot; Tweets & Replies &middot; Media</p>
+          </li>
+          <li class="list-group-item">
+            <div class="midpic">
+              <div class="circle-avatar" style="background-image:url(https://scontent-dft4-2.xx.fbcdn.net/v/t1.0-9/20954056_10210124213524215_1140768672271576427_n.jpg?oh=a5983516bb21b30f729160fc841a2552&oe=5A58C2C2)" alt="my morning face"></div>
+            </div><!-- /.midpic -->
+              <div class="ihatethistext">
+                <div class="page-header">
+                  <h3>Justin Crabtree<small> @scenicbrain &middot; September 23</small></h3>
+                </div>
+                <p style="margin-top:-20px;">Wow twitter sure does rule</p>
+                <span class="glyphicon glyphicon-comment">&nbsp;32&nbsp;</span>
+                <span class="glyphicon glyphicon-share">&nbsp;2.2k&nbsp;</span>
+                <span class="	glyphicon glyphicon-heart">&nbsp;50&nbsp;</span>
+                <span class="glyphicon glyphicon-envelope"></span>
+              </div>
+          </li>
+        </ul>
+      </div><!-- /.middle -->
+      <div class="rightbar">
+        <ul class="list-group">
+          <li class="list-group-item"><div class="well well-sm" style="text-align:center;"><b>Your Tweet Activity</b></div></li>
+          <li class="list-group-item"><p>You've never tweeted. What a loser.</p></li>
+        </ul>
+        <ul class="list-group">
+          <li class="list-group-item"><div class="well well-sm" style="text-align:center;"><b>Who To Follow</b></div></li>
+          <li class="list-group-item">
+            <div class="media">
+              <div class="media-left">
+                  <img class="media-object" src="https://media1.giphy.com/media/26ufee8JeHwnshFiE/giphy.gif" alt="a monster" style="max-width:75px;">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading"><b>@Monster</b></h4>
+                <button type="button" class="btn btn-info">Follow</button>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="media">
+              <div class="media-left">
+                  <img class="media-object" src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Loligo_vulgaris.jpg" alt="a squid" style="max-width:75px;">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading"><b>@Squid</b></h4>
+                <button type="button" class="btn btn-info">Follow</button>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="media">
+              <div class="media-left">
+                  <img class="media-object" src="https://www.petfinder.com/wp-content/uploads/2012/11/91615172-find-a-lump-on-cats-skin-632x475.jpg" alt="the cat" style="max-width:75px;">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading"><b>@TheCat</b></h4>
+                <button type="button" class="btn btn-info">Follow</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div><!-- /.rightbar -->
+    </div><!-- /.containerfluid -->
+  </body>
+</html>
