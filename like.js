@@ -6,6 +6,27 @@
 //    btn.textContent = '\xA0' + count.toString() +'\xA0'
 //  });
 // });
+
+//new tweet
+
+document.getElementById("tweetbutton").addEventListener("click", () => {
+  // Get the full tweet package to clone
+  var thetweet = document.getElementById("thetweet");
+
+  // Copy the tweet and the text in the text area
+  var copy = thetweet.cloneNode(true);
+  var copytext = document.getElementById("TweetForm").value;
+
+  // add the text to the new tweet
+  copy.querySelector("#textofTweet").innerHTML = copytext;
+
+  // append the new tweet
+  document.getElementById("middleLower").appendChild(copy);
+})
+
+
+
+//like button counter
 $(function() {
   $('.glyphicon.glyphicon-heart').click(({target}) => { //((({target}))) sets "this" to what is clicked
     let countTag = $($(target).children('span')[0])

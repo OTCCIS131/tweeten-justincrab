@@ -63,7 +63,7 @@
       <div class="middle" id="middle">
         <ul class="list-group" id="composeNewTweet">
           <li class="list-group-item"><div class="well well-sm" style="text-align:center;"><b>Compose new Tweet</b></div></li>
-          <li class="list-group-item"><textarea class="form-control" rows="5" id="comment"></textarea></li>
+          <li class="list-group-item"><textarea class="form-control" rows="5" id="TweetForm"></textarea></li>
           <li class="list-group-item" id="tweetBottom">
             <div class="marginxtra">
                 <span class="label label-info">
@@ -75,9 +75,7 @@
               </div><!-- /.marginxtra -->
               <div class="btn-group btn-group-lg" role="group" aria-label="..." style="float:right;margin-top:-10px;">
                 <p style="float:left;margin-right:10px;margin-top:-5px;">140</p>
-                <span class="label label-primary">
-                  <span class>Tweet</span>
-                </span>
+                <button type="button" class="btn btn-primary btn-xs" id="tweetbutton">Tweet</button>
               </div><!-- /.btn-group -->
           </li>
         </ul>
@@ -85,7 +83,7 @@
           <li class="list-group-item" id="tweetStats">
               <p>Tweets &middot; Tweets & Replies &middot; Media</p>
           </li>
-          <li class="list-group-item" id="tweet">
+          <li class="list-group-item" id="thetweet">
             <div class="midpic">
               <div class="circle-avatar" style="background-image:url(https://scontent-dft4-2.xx.fbcdn.net/v/t1.0-9/20954056_10210124213524215_1140768672271576427_n.jpg?oh=a5983516bb21b30f729160fc841a2552&oe=5A58C2C2)" alt="my morning face"></div>
             </div><!-- /.midpic -->
@@ -93,7 +91,9 @@
                 <div class="page-header">
                   <h3>Justin Crabtree<small> @scenicbrain &middot; September 23</small></h3>
                 </div>
-                <p style="margin-top:-20px;">Wow twitter sure does rule</p>
+                <div id="textofTweet">
+                  <p style="margin-top:-20px;">Wow twitter sure does rule</p>
+                </div>
                 <span class="glyphicon glyphicon-comment">&nbsp;32&nbsp;</span>
                 <span class="glyphicon glyphicon-share">&nbsp;2.2k&nbsp;</span>
                  <span class="glyphicon glyphicon-heart" ><span>&nbsp;50&nbsp;</span></span> 
