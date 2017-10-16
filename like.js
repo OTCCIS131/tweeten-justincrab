@@ -7,8 +7,7 @@
 //  });
 // });
 
-//new tweet
-
+//new tweet - VANILLA
 document.getElementById("tweetbutton").addEventListener("click", () => {
   // Get the full tweet package to clone
   var thetweet = document.getElementById("thetweet");
@@ -20,8 +19,8 @@ document.getElementById("tweetbutton").addEventListener("click", () => {
   // add the text to the new tweet
   copy.querySelector("#textofTweet").innerHTML = copytext;
 
-  // append the new tweet
-  document.getElementById("middleLower").appendChild(copy);
+  // append the new tweet to the top of the list (but after the tweet stats bar)
+  document.getElementById("middleLower").insertBefore(copy, document.getElementById("tweetStats").nextSibling);
 })
 
 
